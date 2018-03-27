@@ -213,32 +213,33 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" method="POST" novalidate="novalidate" action="https://formspree.io/viniciuscdst@gmail.com">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" method="POST" action="https://formspree.io/viniciuscdst@gmail.com">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Seu Nome *" required data-validation-required-message="Por favor, digite seu nome.">
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Seu Nome *" required data-validation-required-message="Por favor, digite seu nome.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Seu Email *" required data-validation-required-message="Por favor, digite seu email.">
+                  <input class="form-control" name="_replyto" type="email" placeholder="Seu Email *" required data-validation-required-message="Por favor, digite seu email.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Seu número de telefone(whatsapp) *" required data-validation-required-message="Por favor, digite seu número de telefone de preferência o whatsapp.">
+                  <input class="form-control" name="phone" name id="phone" type="tel" placeholder="Seu número de telefone(whatsapp) *" required
+                    data-validation-required-message="Por favor, digite seu número de telefone de preferência o whatsapp.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Sua mensagem *" required data-validation-required-message="Por favor, digite a mensagem."></textarea>
+                  <textarea class="form-control" name="message" id="message" placeholder="Sua mensagem *" required data-validation-required-message="Por favor, digite a mensagem."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar Menssagem</button>
+                <button id="mail" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar Menssagem</button>
               </div>
             </div>
           </form>
@@ -246,6 +247,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
@@ -255,7 +257,7 @@
           <span class="copyright">Copyright &copy; Vinícius Cavalcanti 2018</span>
         </div>
         <div class="col-md-4">
-          <ul class="list-inline social-buttons">           
+          <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/viniciuscdst?ref=bookmarks">
                 <i class="fa fa-facebook"></i>
@@ -265,26 +267,27 @@
               <a href="www.linkedin.com/in/vinícius-cavalcanti-87b098b">
                 <i class="fa fa-linkedin"></i>
               </a>
-            </li> 
+            </li>
             <li class="list-inline-item">
-                <a href="https://api.whatsapp.com/send?phone=5587988378547&text=Olá,%20Vinícius.">                  
-                  <i class="fa fa-whatsapp"></i>
-                </a>
-              </li> 
+              <a href="https://api.whatsapp.com/send?phone=5587988378547&text=Olá,%20Vinícius.">
+                <i class="fa fa-whatsapp"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="malito:viniciuscdst@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                  <i class="fa fa-envelope"></i>
-                <a href="malito:viniciuscdst@gmail.com">E-mail</a>
-              </li>
-              <li class="list-inline-item">
-                  <i class="fa fa-whatsapp"></i>
-                <a href="https://api.whatsapp.com/send?phone=5587988378547&text=Olá,%20Vinícius.">+55 (87) 9 98837-8547</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <i class="fa fa-whatsapp"></i>
+              <a href="https://api.whatsapp.com/send?phone=5587988378547&text=Olá,%20Vinícius.">+55 (87) 9 98837-8547</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
